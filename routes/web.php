@@ -14,6 +14,10 @@
 /*Route::get('/', function () {
     return view('welcome');
 });*/
+Auth::routes();
+//dashboard
+Route::get('dashboard', 'dashboardController@dashboard')->name('dashboard');
+
 Route::get('/beranda', 'berandaController@beranda')->name('beranda');
 //area
 Route::get('area', 'areaController@index')->name('area');
@@ -77,3 +81,7 @@ Route::get('fdtPic', 'fdtPicController@index')->name('fdtPic');
 Route::get('progresPic', 'ProgresPicController@index')->name('progresPic');
 Route::get('progresPic/edit/{progres_id}', 'ProgresPicController@edit')->name('editProgresPic');
 Route::post('progresPic/update/{progres_id}', 'ProgresPicController@update')->name('updateProgresPic');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+

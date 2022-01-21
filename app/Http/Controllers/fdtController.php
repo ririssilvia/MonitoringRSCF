@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class fdtController extends Controller
 {
+
     public function index()
     {
         $fdt = Fdt::all();

@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 
 class ProgresController extends Controller
 {
+
+
     public function index()
     {
         $progres = Progres::all();

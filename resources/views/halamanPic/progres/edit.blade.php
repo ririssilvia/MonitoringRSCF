@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('halamanPic.layout.master')
 @section('konten')       
     <!-- Content Header (Page header) -->
     <section>

@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 
 class rcfaController extends Controller
 {
+
+
     public function index()
     {
         $rcfa = Rcfa::all();

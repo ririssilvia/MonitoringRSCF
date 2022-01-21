@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class fdtPicController extends Controller
 {
+
     public function index()
     {
         $fdtPic = FdtPic::all();

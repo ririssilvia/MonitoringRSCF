@@ -14,7 +14,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{route ('dashboard')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -36,8 +36,7 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <!-- Nav Item - Charts -->
-    <li class="nav-item">
-    <a class="nav-link" href="{{route ('area')}}">
+    <li class="nav-item"> <a class="nav-link" href="{{route ('area')}}">
             <i class="fas fa-map-marked-alt"></i>
             <span>Area</span></a>
     </li>

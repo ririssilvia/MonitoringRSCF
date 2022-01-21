@@ -8,6 +8,7 @@ use App\Area;
 use PDF;
 class asetController extends Controller
 {
+    
     public function index()
     {
         $aset = Asset::all();

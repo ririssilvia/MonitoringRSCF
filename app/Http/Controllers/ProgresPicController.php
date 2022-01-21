@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 class ProgresPicController extends Controller
 {
+
+
     public function index()
     {
         $progresPic = Progres::all();

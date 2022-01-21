@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 class rcfaPicController extends Controller
 {
+
+
     public function index()
     {
         $rcfaPic = RcfaPic::all();
