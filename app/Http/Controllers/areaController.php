@@ -15,6 +15,10 @@ class areaController extends Controller
     //  abort(403, 'Anda tidak memiliki cukup hak akses');
     //  });
     // }
+    public function __construct()
+    {
+    $this->middleware('auth');
+    } 
 
     public function area()
     {

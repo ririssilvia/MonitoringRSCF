@@ -15,7 +15,7 @@
     return view('welcome');
 });*/
 Auth::routes();
-//dashboard
+//dashboard Admin
 Route::get('dashboard', 'dashboardController@dashboard')->name('dashboard');
 
 Route::get('/beranda', 'berandaController@beranda')->name('beranda');
@@ -75,13 +75,17 @@ Route::get('progres/delete/{progres_id}', 'ProgresController@destroy')->name('de
 Route::get('progres/cetakProgres', 'ProgresController@cetakProgres')->name('cetakProgres');
 
 //Halaman Pic
+Route::get('/dashboardPic', 'dashboardPicController@dashboardPic')->name('dashboardPic');
 Route::get('/berandaPic', 'berandaPicController@berandaPic')->name('berandaPic');
 Route::get('rcfaPic', 'rcfaPicController@index')->name('rcfaPic');
 Route::get('fdtPic', 'fdtPicController@index')->name('fdtPic');
 Route::get('progresPic', 'ProgresPicController@index')->name('progresPic');
 Route::get('progresPic/edit/{progres_id}', 'ProgresPicController@edit')->name('editProgresPic');
 Route::post('progresPic/update/{progres_id}', 'ProgresPicController@update')->name('updateProgresPic');
+
+//Halaman User
 Auth::routes();
+Route::get('/berandaUser', 'berandaUserController@berandaUser')->name('berandaUser');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

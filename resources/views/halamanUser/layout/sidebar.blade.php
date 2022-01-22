@@ -10,7 +10,7 @@
     </a>
     <hr class="sidebar-divider my-0">
     <li class="nav-item active">
-        <a class="nav-link" href="{{route ('dashboardPic')}}">
+        <a class="nav-link" href="{{route ('dashboard')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -25,27 +25,16 @@
 
     <li class="nav-item active">
         <a class="nav-link" href="#">  
-            <span>DATA MONITORING</span></a>
+            <span>DATA LAPORAN</span></a>
     </li>
     <hr class="sidebar-divider my-0">
     <li class="nav-item">
-        <a class="nav-link" href="{{route ('rcfaPic')}}">
-                <i class="fas fa-exclamation-triangle"></i>
-                <span>RCFA</span>
+        <a class="nav-link" href="">
+                <i class="fas fa-paste"></i>
+                <span>Laporan</span>
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{route ('fdtPic')}}">
-                <i class="fas fa-check-circle"></i>
-                <span>FDT</span>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{route ('progresPic')}}">
-                <i class="fas fa-spinner"></i>
-                <span>Progres</span>
-        </a>
-    </li>
+    
     <hr class="sidebar-divider d-none d-md-block">
 
     <!-- Sidebar Toggler (Sidebar) -->

@@ -50,17 +50,18 @@
                                             @csrf
                                             
                                                 <div class="form-group">
-                                                    <label for="nid"><strong>NID</strong></label>
-                                                    <input id="nid" type="text" class="form-control form-control-user @error('username') is-invalid @enderror" name="nid" value="{{ old('nid') }}" placeholder="Enter NID" required autocomplete="nid" autofocus>
-                                                    @error('username')
-                                                        <span class="invalid-feedback" role="alert">
-                                                            <strong>{{ $message }}</strong>
-                                                        </span>
-                                                    @enderror
+                                                    <label for="email" ><strong>{{ __('E-Mail Address') }}</strong></label>
+                                                            <input id="email" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                                            @error('email')
+                                                                <span class="invalid-feedback" role="alert">
+                                                                    <strong>{{ $message }}</strong>
+                                                                </span>
+                                                            @enderror
                                                 </div>
                     
                                             <div class="form-group">
-                                                <label for="nid"><strong>Password</strong></label>
+                                                <label for="password"><strong>Password</strong></label>
                                                     <input id="password" type="password" class="form-control form-control-user @error('password') is-invalid @enderror" name="password" placeholder="Enter Password..." required autocomplete="current-password">
                     
                                                     @error('password')

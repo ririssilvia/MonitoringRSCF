@@ -7,19 +7,14 @@ use App\Rcfa;
 use App\Pic;
 use Illuminate\Http\Request;
 
-class dashboardController extends Controller
+class dashboardPicController extends Controller
 {
-    public function __construct()
-    {
-    $this->middleware('auth');
-    }
-    
-    public function dashboard()
+    public function dashboardPic()
     {
         $area = Area::get();
         $aset = Asset::get();
         $rcfa = Rcfa::get(); 
         $pic = Pic::get();
-        return view('dashboard.index', compact('area','aset','rcfa','pic'));
+        return view('halamanPic.dashboard.index', compact('area','aset','rcfa','pic'));
     }
 }
