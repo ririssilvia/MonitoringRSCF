@@ -17,6 +17,8 @@
 Auth::routes();
 //dashboard Admin
 Route::get('dashboard', 'dashboardController@dashboard')->name('dashboard');
+// Route::get('dashboard', 'dashboardController@pie')->name('dashboard');
+
 
 Route::get('/beranda', 'berandaController@beranda')->name('beranda');
 //area
@@ -82,6 +84,7 @@ Route::get('fdtPic', 'fdtPicController@index')->name('fdtPic');
 Route::get('progresPic', 'ProgresPicController@index')->name('progresPic');
 Route::get('progresPic/edit/{progres_id}', 'ProgresPicController@edit')->name('editProgresPic');
 Route::post('progresPic/update/{progres_id}', 'ProgresPicController@update')->name('updateProgresPic');
+//pie
 
 //Halaman User
 Auth::routes();
